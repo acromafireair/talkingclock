@@ -4,7 +4,7 @@
 #include <list>
 #include <thread>
 #include <chrono>
-#include <SFML/Audio.hpp>
+//#include <SFML/Audio.hpp>
 
 using namespace std;
 
@@ -36,7 +36,7 @@ int main()
     writtenTime.append(outputTimeInWords(time));
     cout << writtenTime << endl;
 
-    // This part should play the sound files in order, but the terminal I use doesn't have audio, so I can't tell if it works
+ /*   // This part should play the sound files in order, but the terminal I use doesn't have audio, so I can't tell if it works
     list<string> soundFiles = generateSoundFiles(splitString(writtenTime, ' '));
     sf::SoundBuffer buffer;
     sf::Sound sound;
@@ -45,7 +45,7 @@ int main()
         sound.setBuffer(buffer);
         sound.play();
         sound.stop();
-    }
+    }*/
     return 0;
 }
 
